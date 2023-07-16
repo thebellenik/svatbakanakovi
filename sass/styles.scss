@@ -775,6 +775,7 @@ Google map
 @media screen and (max-width: 991px){
   #map-content-wrapper {
     margin-right: 0;
+    min-width: 250px;
   }
   #map-content {
     img {
