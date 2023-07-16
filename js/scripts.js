@@ -120,7 +120,10 @@ $(document).ready(function () {
 
     $(function () {
 
-        $('a[href*=#]:not([href=#])').click(function () {
+        // $('a[href*=#acc]').click(function () {
+        //     return false;
+        // });
+        $('a[href*=#]:not([href*=#acc])').click(function () {
             if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
 
                 var target = $(this.hash);
@@ -128,7 +131,7 @@ $(document).ready(function () {
                 if (target.length) {
                     $('html,body').animate({
                         scrollTop: target.offset().top - 90
-                    }, 2000);
+                    }, 1000);
                     return false;
                 }
             }
@@ -241,6 +244,7 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
+    return
     var location = {lat: 22.5932759, lng: 88.27027720000001};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,

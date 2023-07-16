@@ -252,7 +252,7 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../img/hero-min.jpg') center center;
+  background: url('../img/hero.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -290,10 +290,11 @@ Hero
   position: fixed;
   width: 100%;
   z-index: 999;
+  background-color: rgba(100, 100, 100, 0.5);
 }
 .fixed {
   position: fixed;
-  background-color: rgba(55, 36, 40, .88);
+  background-color: rgba(100, 100, 100, 0.8);
   z-index: 999;
   width: 100%;
 }
@@ -750,13 +751,15 @@ Embed video
 Google map
 ========================================================================== */
 #map-canvas {
-  height: 500px;
+  height: 700px;
   width: 100%;
 }
 #map-content-wrapper {
   position: relative;
-  margin-top: -502px;
-  margin-bottom: 150px;
+  margin-top: -852px;
+  margin-bottom: 350px;
+  margin-right: -195px;
+  min-width: 1250px;
 }
 #map-content {
   margin-top: 40px;
@@ -764,9 +767,26 @@ Google map
   background: #fff;
   -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
   transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
+
+  img {
+    max-width: 100%;
+  }
 }
+@media screen and (max-width: 991px){
+  #map-content-wrapper {
+    margin-right: 0;
+  }
+  #map-content {
+    img {
+      max-width: 50%;
+    }
+  }
+}
+
+
 #btn-show-content {
   padding: 20px;
+  margin-top: 160px;
   background: #fff;
   cursor: pointer;
   display: inline-block;
@@ -898,4 +918,117 @@ body.modal-open {
 }
 .modal-body {
   padding:25px;
+}
+
+/*Section used for centering process*/
+#events section {
+  width: 100%;
+  //height: 100vh;
+  background-color: #f8f9fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+*,
+*::before,
+*::after{
+  margin:0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+.accordion-container{
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.accordion-item{
+  background-color: #f8f9fd;
+  border-radius: .4rem;
+}
+
+.accordion-item hr{
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.accordion-link{
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  background-color: #f8f9fd;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.accordion-link h3{
+  font-weight:500;
+  font-size: 20px;
+}
+
+.accordion-link i{
+  color: #000000;
+  padding: .5rem;
+
+}
+
+.accordion-link ul{
+  display:flex;
+  align-items: flex-end;
+  list-style-type: none;
+  margin-left: 25px;
+}
+
+.accordion-link li{
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 0 0 1px 5px;
+}
+
+.accordion-link div{
+  display: flex;
+}
+
+.accordion-link .ion-md-arrow-down{
+  display: none;
+}
+
+.answer{
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #f8f9fd;
+  transition: max-height 650ms;
+}
+
+
+
+.answer p{
+  color: black;
+  font-size: 15px;
+  padding: 2rem;
+
+}
+
+.accordion-item:target .answer{
+  max-height: 20rem;
+}
+
+.accordion-item:target .accordion-link .ion-md-arrow-forward{
+  display: none
+}
+
+.accordion-item:target .accordion-link .ion-md-arrow-down{
+  display: block;
 }
