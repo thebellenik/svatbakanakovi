@@ -282,7 +282,7 @@ Hero
   }
   .hero-content img {
     width: 65%;
-    margin-bottom: 12%;
+    margin-bottom: 5%;
   }
 }
 .navigation {
@@ -407,8 +407,13 @@ Intro
     height: auto;
   }
 }
-#intro p {
+#intro div, #s-kym-se-setkate div {
   text-align: center;
+  margin-bottom: 50px;
+
+  p {
+      min-height: 200px;
+  }
 }
 
 /* ==========================================================================
@@ -1032,4 +1037,31 @@ html {
 
 .accordion-item:target .accordion-link .ion-md-arrow-down{
   display: block;
+}
+
+.info-icon {
+  background-color: $section-dark;
+  fill: $h2-color;
+  color: $h2-color;
+  font-size: 36px;
+  padding: 13px;
+  border-radius: 60px 60px 60px 60px;
+  display: inline-block;
+  line-height: 1;
+  transition: all .3s;
+  text-align: center;
+
+  i {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    display: block;
+  }
+}
+
+.divider{
+  width: 80px;
+  margin: 0 auto;
+  border-top: 1px solid $h2-color;
+  display: flex;
 }
