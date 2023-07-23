@@ -558,6 +558,12 @@ Features-stack
 .events
 ========================================================================== */
 .events {
+  .leftcol,.rightcol{
+    div {
+      padding-bottom: 100px;
+    }
+  }
+
   .leftcol {
     padding-right: 100px;
     border-right: solid 1px $keyline-color;
@@ -1065,3 +1071,4 @@ html {
   border-top: 1px solid $h2-color;
   display: flex;
 }
+
