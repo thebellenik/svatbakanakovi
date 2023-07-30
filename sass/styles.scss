@@ -992,7 +992,6 @@ html {
 .accordion-link i{
   color: #000000;
   padding: .5rem;
-
 }
 
 .accordion-link ul{
@@ -1024,13 +1023,10 @@ html {
   transition: max-height 650ms;
 }
 
-
-
 .answer p{
   color: black;
   font-size: 15px;
   padding: 2rem;
-
 }
 
 .accordion-item:target .answer{
