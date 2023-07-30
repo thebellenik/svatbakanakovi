@@ -187,7 +187,7 @@ Navigation
   top: 0;
   right: 15px;
   z-index: 999999;
-  padding: 10px 35px 16px 0;
+  padding: 10px 15px 16px 0;
   cursor: pointer
 }
 .nav-toggle:focus {
@@ -242,7 +242,7 @@ Navigation
   position: absolute;
   height: 26px;
   right: 10px;
-  top: 48px;
+  top: 25px;
   visibility: hidden;
   transition: all 300ms ease-in-out;
 }
@@ -934,13 +934,17 @@ body.modal-open {
 }
 
 /*Section used for centering process*/
-#events section {
+section#events {
   width: 100%;
   //height: 100vh;
   background-color: #f8f9fd;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  img {
+    //max-width: 100%;
+  }
 }
 
 *,
@@ -1068,4 +1072,3 @@ html {
   border-top: 1px solid $h2-color;
   display: flex;
 }
-

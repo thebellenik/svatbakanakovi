@@ -98,9 +98,9 @@ $(document).ready(function () {
                 // $('header .member-actions').css({
                 //     // "top": "34px",
                 // });
-                $('header .navicon').css({
-                    "top": "34px",
-                });
+                // $('header .navicon').css({
+                //     "top": "25px",
+                // });
             } else {
                 $('section.navigation').removeClass('fixed');
                 $('header').css({
@@ -110,9 +110,9 @@ $(document).ready(function () {
                 // $('header .member-actions').css({
                 //     // "top": "50px",
                 // });
-                $('header .navicon').css({
-                    "top": "48px",
-                });
+                // $('header .navicon').css({
+                //     "top": "25px",
+                // });
             }
         });
     });
