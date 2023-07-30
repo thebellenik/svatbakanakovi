@@ -120,9 +120,12 @@ $(document).ready(function () {
 
     $(function () {
 
-        // $('a[href*=#acc]').click(function () {
-        //     return false;
-        // });
+        $('a[href*=#acc]').click(function (e) {
+            e.preventDefault();
+            console.log($(e.target).parents(".accordion-item"));
+            $(e.target).parents(".accordion-item").toggleClass("focused");
+            $(e.target).parents(".accordion-item").siblings(".accordion-item").removeClass("focused");
+        });
         $('a[href*=#]:not([href*=#acc])').click(function () {
             if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
 

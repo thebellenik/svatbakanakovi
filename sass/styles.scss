@@ -1029,15 +1029,15 @@ html {
   padding: 2rem;
 }
 
-.accordion-item:target .answer{
+.accordion-item.focused .answer{
   max-height: 20rem;
 }
 
-.accordion-item:target .accordion-link .ion-md-arrow-forward{
+.accordion-item.focused .accordion-link .ion-md-arrow-forward{
   display: none
 }
 
-.accordion-item:target .accordion-link .ion-md-arrow-down{
+.accordion-item.focused .accordion-link .ion-md-arrow-down{
   display: block;
 }
 
