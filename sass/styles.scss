@@ -475,14 +475,6 @@ Intro
   }
 }
 
-#harmonogram {
-  p {
-    padding-bottom: 10px;
-    padding-top: 0px;
-    margin-bottom: 0px;
-  }
-}
-
 /* ==========================================================================
 Features-stack
 ========================================================================== */
@@ -1213,4 +1205,26 @@ html {
   margin: 0 auto;
   border-top: 1px solid $h2-color;
   display: flex;
+}
+
+
+#harmonogram {
+  p {
+    padding-bottom: 10px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  ul {
+    padding-bottom: 10px;
+
+    p {
+      padding-bottom: 0;
+    }
+
+    li {
+      margin-left: 35px;
+      list-style: disc inside !important;
+    }
+  }
 }
