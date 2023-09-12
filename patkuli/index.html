@@ -1,1 +1,159 @@
-test page
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Patkuli</title>
+    <meta name="description" content="Vítejte na naší svatbě">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Vítejte na naší svatbě">
+    <meta property="og:description" content="Vítejte na naší svatbě">
+    <meta property="og:image" content="https://svatbakanakovi.cz/img/hero-min.jpg">
+    <meta property="og:type" content="website">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="mask-icon" href="../logo-qr.png" color="#5bbad5">
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <script>
+        // load css files from CDN if local node_modules fail
+        function loadCssFromCDN(css) {
+            // create new link tag
+            const link = document.createElement('link');
+            if (css === 'animate.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
+            } else if (css === 'font-awesome.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+            }
+            link.rel = 'stylesheet';
+
+            // add link tag to head section
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+
+        // load js files from CDN if local node_modules fail
+        function loadJsFromCDN(js) {
+            if (js === 'waypoints.js') {
+                document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>');
+            } else if (js === 'jquery.js') {
+                document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>');
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="../css/normalize.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery.fancybox.css">
+    <link rel="stylesheet" href="../css/flexslider.css">
+    <link rel="stylesheet" href="../css/styles.min.css">
+    <link rel="stylesheet" href="patkuli.css">
+    <link rel="stylesheet" href="../css/queries.css">
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
+    <link rel="stylesheet" href="../node_modules/fontawesome-free/css/all.min.css" onerror="loadCssFromCDN('font-awesome.css')">
+    <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body id="top">
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<section class="hero">
+    <section class="navigation">
+        <header>
+            <div class="header-content">
+                <div class="logo"><a href="#"><img src="../img/logo.png" alt="Logo"></a></div>
+                <div class="header-nav">
+                    <nav>
+                        <ul class="primary-nav">
+                            <li><a href="/#uvitani">Vítejte na naší svatbě</a></li>
+                            <li><a href="/#info">Informace</a></li>
+                            <li><a href="/#harmonogram">Harmonogram</a></li>
+                            <li class="hidden-sm hidden-xs"><a href="/#video-bg">Místo</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navicon">
+                    <a class="nav-toggle" href="#"><span></span></a>
+                </div>
+            </div>
+        </header>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="hero-content text-center">
+                    <h1>Patkuli</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="down-arrow floating-arrow"><a href="#intro"><i class="fa fa-angle-down"></i></a></div>
+</section>
+<section id="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="header">Pro nás velmi významné místo</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Vyhlídka, kde zaznělo "ANO"</h3>
+                <div>
+                    <p>
+                        V nejstarších částech estonského Tallinnu se tyčí vyhlídka na město s dominantou vysokého kostela sv. Olafa.
+                    </p>
+                    <p>
+                        Po neúspěšném pokusu s vedlejší vyhlídkou v rekonstrukci, přišla ženichovi tato vyhlídka vhod jako druhá, později ukázajíc se jako lepší, možnost s výhledem na dlouhotrvající severský západ slunce.
+                        Nabízející se focení se stativem dalo možnost celý významný okamžik, při němž zazněla důležitá, přesto impulzivní otázka: "princezno, budeš mojí královnou?" zachytit na video, které si můžete prohlédnout níže.
+                    </p>
+                </div>
+                <span class="divider"></span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="video-bg">
+    <!--         class="hidden-sm hidden-xs"-->
+    <!--&gt;-->
+    <div class="player" data-property="{videoURL:'https://youtu.be/ZId_wOALgZQ',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1, useOnMobile:true, loop:false }"
+         id="bgndVideo">
+    </div>
+    <div id="video-content">
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center content">
+                <span class="to-top-wrapper"><a class="to-top" href="#top"><i class="fa fa-angle-up"></i></a></span>
+                <p>Vytvořeno s <span class="fa fa-heart pulse2"></span> pro naši svatbu</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
+<script src="../node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
+<script src="../js/jquery.fancybox.pack.js"></script>
+<script src="../js/vendor/bootstrap.min.js"></script>
+<script src="../js/jquery.flexslider-min.js"></script>
+<script src="../js/jquery.mb.YTPlayer.min.js"></script>
+<script src="../js/vendor/ouical.js"></script>
+<script src="../js/scripts.js"></script>
+</body>
+</html>
