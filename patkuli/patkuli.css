@@ -3,3 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#video-bg {
+    height: 600px;
+}
