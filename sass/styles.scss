@@ -302,6 +302,13 @@ Hero
     bottom: 100px;
     left: 50%;
   }*/
+  video {
+    min-height: 750px;
+    width: 100%;
+    //margin-bottom: -950px;
+    position: absolute;
+  }
+
   .down-arrow a {
     color: $txt-light;
   }
@@ -1229,4 +1236,6 @@ html {
   }
 }
 
-a:hover {cursor: pointer;}
+a:hover {
+  cursor: pointer;
+}
